@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery  --> 
+    <script src="ext/jquery.min.js"></script>
+    
+    <!-- jQueryUI  --> 
+    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.min.css">
+    <script src="ext/jqueryui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/codigo.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container-header">
+        <div class="menu-header">
+            <span>Inicio</span>  
+            <span>Servicios</span>
+            <span>Tecnologías</span>
+            <span>Fases del desarrollo</span>
+            <span>Clientes</span>
+            <span>Quiénes somos</span>
+            <span>Contáctanos</span>
+        </div>    
+    </div>
+  </header>
+  <div class="inicio-pagina">
+    <div class="line_icon">
+      <div class="raya"></div>
+      <div class="logo_home">
+        <img src="imagenes/Logo_con_luz.png">
+      </div>
+      <div class="raya button"></div>
+    </div>
+    <div class="content-inicio">
+      <div class="tittle-inicio">
+        <h1>Innovación digital
+            a tu servicio</h1>
+         <span>tu visión nuestra tecnología</span>
+      </div>
+      <div class="buttom-contact">
+        <h3>Oprime aquí</h3>
+        <button>Contrata tu software</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="servicios_new" id="Servicios">
+    <div class="container_servicios">
+      <div class="title_servi">
+        <h1>SERVICIOS</h1>
+      </div>
+      <div class="content_servicios">
+        <div class="item servicio1">
+          <!-- <a href=""> -->
+            <div class="img_servicios">
+              <img id="image1" class="vibra" src="imagenes/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg">
+            </div>
+            <div class="title_DWM">
+              <h1>Desarrollo Web a la Medida</h1>
+            </div>
+          <!-- </a> -->
+        </div>
+        <div class="item servicio2">
+          <!-- <a href=""> -->
+            <div class="img_servicios">
+              <img id="image2" class="vibra" src="imagenes/online-web-design.jpg">
+            </div>
+            <div class="title_DWM">
+              <h1>Diseño de Páginas Web</h1>
+            </div>
+          <!-- </a> -->
+        </div>
+        <div class="item servicio3">
+          <!-- <a href=""> -->
+            <div class="img_servicios">
+              <img id="image3" class="vibra" src="imagenes/analitica.jpg">
+            </div>
+            <div class="title_DWM">
+              <h1>Analítica de Datos</h1>
+            </div>
+          <!-- </a> -->
+        </div>
+        <div class="item servicio4">
+          <!-- <a href=""> -->
+            <div class="img_servicios">
+              <img id="image4" class="vibra" src="imagenes/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg">
+            </div>
+            <div class="title_DWM">
+              <h1>Dominio y Hosting</h1>
+            </div>
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+    <input type="hidden" id="tipo_animacion">
+  </div>
+
+  <div class="tecnologias">
+    <div class="difuminado"></div>
+    <div class="title_tecnologias">
+      <h1>TECNOLOGÍAS</h1>
+    </div>
+    <div class="target">
+      <div class="card">
+        <div class="face front">
+          <img src="imagenes/Frontend.png">
+          <h3>Tecnologías Frontend</h3>
+        </div>
+        <div class="face back">
+          <h3>Tecnologías frontend</h3>
+          <div class="iconos-technology">
+            <img src="imagenes/html_logo.png">
+            <img src="imagenes/css_logo.png">
+            <img src="imagenes/javascript_logo.png">
+            <img src="imagenes/sass_logo.png">
+            <img src="imagenes/boostrap_logo.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face front">
+          <img src="imagenes/Backend.png">
+          <h3>Tecnologías Backend</h3>
+        </div>
+        <div class="face back">
+          <h3>Tecnologias Backend</h3>
+          <div class="iconos-technology backing">
+            <img src="imagenes/Php.png">
+            <img src="imagenes/mariadb_logo.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face front">
+          <img src="imagenes/Servidores.png">
+          <h3>Tecnologías Servidores</h3>
+        </div>
+        <div class="face back">
+          <h3>Tecnologías servidores</h3>
+          <div class="iconos-technology">
+            <img src="imagenes/windowsServer_logo.png">
+            <img src="imagenes/linux_logo.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face front">
+          <img src="imagenes/AnaliticaDatos.png">
+          <h3>Tecnologías Analítica de datos</h3>
+        </div>
+        <div class="face back">
+          <h3>Tecnologías Analítica de datos</h3> 
+          <div class="iconos-technology analitic">
+            <img src="imagenes/phyton_logo.png">
+            <img src="imagenes/powerbi_logo.png">
+            <img class="look" src="imagenes/loooker_logo.png">
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="container-proceso_desarollo">
+    <div class="container-acordeon">
+      <div class="tittle-desarollo">
+        <h1>
+          Fases del proceso del desarrollo de software
+        </h1>
+      </div>
+      <div class="content-acordeon buron">
+        <div id="analisisNecesidad" class="accordion abrir" data-num="1">
+          <div class="t_simbol">
+            <span class="imagen-plus">
+              <img class="mostrar plus1" src="imagenes/flecha.png">
+              <img class="no_mostrar minus1" src="imagenes/FlechaAbajo.png">
+            </span>
+            <div class="accordion-header">Análisis de la Necesidad</div>
+          </div>
+          <div class="accordion-content">
+            <p> 
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más 
+              importante para conseguir dar el paso correcto hacia la digitalización. 
+              Analizar detalladamente y extraer las necesidades y los procesos a 
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran 
+              el software a medida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-acordeon buron">
+        <div id="desarrolloSoftware" class="accordion abrir" data-num="2">
+          <div class="t_simbol">
+            <div class="imagen-plus">
+              <img class="mostrar plus2" src="imagenes/flecha.png">
+              <img class="no_mostrar minus2" src="imagenes/FlechaAbajo.png">
+            </div>
+            <div class="accordion-header">Desarrollo del software</div>
+          </div>
+          <div class="accordion-content">
+            <p> 
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más 
+              importante para conseguir dar el paso correcto hacia la digitalización. 
+              Analizar detalladamente y extraer las necesidades y los procesos a 
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran 
+              el software a medida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-acordeon buron">
+        <div id="PuestaMarcha" class="accordion abrir" data-num="3">
+          <div class="t_simbol">
+            <div class="imagen-plus">
+              <img class="mostrar plus3" src="imagenes/flecha.png">
+              <img class="no_mostrar minus3" src="imagenes/FlechaAbajo.png">
+            </div>
+            <div class="accordion-header">Puesta en marcha</div>
+          </div>
+          <div class="accordion-content">
+            <p> 
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más 
+              importante para conseguir dar el paso correcto hacia la digitalización. 
+              Analizar detalladamente y extraer las necesidades y los procesos a 
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran 
+              el software a medida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-acordeon">
+        <div id="mantenimiento" class="accordion abrir" data-num="4">
+          <div class="t_simbol">
+            <span class="imagen-plus">
+              <img class="mostrar plus4" src="imagenes/flecha.png">
+              <img class="no_mostrar minus4" src="imagenes/FlechaAbajo.png">
+            </span>
+            <div class="accordion-header">Mantenimiento</div>
+          </div>
+          <div class="accordion-content">
+            <p> 
+              Atendemos las posibles incidencias detectadas en el uso del software y 
+              las solucionamos en un proceso transparente para todos. La experiencia 
+              de todo el que trabaje con el software ha de ser la mejor posible y para 
+              eso hay que realizar un mantenimiento que permita resolver cualquier 
+              imprevisto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-image">
+      <div class="flipper" id="flipper">
+        <img id="collage" class="roll-in-top" src="imagenes/IMG_pasos_desarrolloSotware.jpg" alt="Image A">
+      </div>
+    </div>
+  </div>
+  
+  <div class="center">
+    <div class="card">
+      <div class="additional">
+        <div class="user-card">
+          <img src="./imagenes/Karen.png">
+        </div>
+        <div class="more-info">
+          <h1>Karen Dayanna Castaño Orjuela</h1>
+          <div class="coords">
+            <span>Se unió en Enero 2023</span>
+          </div>
+          <div class="coords">
+            <p>
+              Karen, en Qualitic Solution, es una persona bondadosa y amable. Se dedica con esmero a sus responsabilidades
+              , mostrando un enfoque admirable en su trabajo. Su presencia inspira respeto y aporta un ambiente de orden y
+              limpieza en la oficina.</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Karen Dayanna Castaño Orjuela</h1>
+        <p>Es la líder estratégica de la empresa, encargada de supervisar y dirigir todas las áreas operativas y de negocio.
+           Se asegura de que la empresa esté alineada con su misión y visión, tomando decisiones clave para el crecimiento,
+           la innovación y la eficiencia. </p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card"> 
+          <img src="./imagenes/David.png"> 
+        </div>
+        <div class="more-info">
+          <h1>David Fernando Tabares Vera</h1>
+          <div class="coords">
+            <span>Se unió en Enero 2023</span>
+          </div>
+          <div class="coords">
+            <p>
+              David, en Qualitic Solution, es una persona que irradia buena energía y un toque de locura positiva. 
+              Su amabilidad es evidente en su generosidad para compartir conocimientos, especialmente en el ámbito
+              de la programación. Su apertura y disposición hacen de él un gran compañero de trabajo</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>David Fernando Tabares Vera</h1>
+        <p>El <strong>Director de Proyectos</strong> es responsable de la planificación, gestión y ejecución de los proyectos de software.
+           Supervisa todas las fases del ciclo de vida del proyecto, asegurándose de que los tiempos, costos y 
+           expectativas de los clientes se cumplan.  </p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card"> 
+          <img src="./imagenes/Nata .png"> 
+        </div>
+        <div class="more-info">
+          <h1>Maria Natalia Rodríguez Serna</h1>
+          <div class="coords">
+            <span>Se unió en Enero 2023</span>
+          </div>
+          <div class="coords">
+            <p>Natalia, en Qualitic Solution, es una persona reservada, pero cuando sus compañeros interactúan con ella, 
+              se convierte en alguien divertida y amable. Siempre está dispuesta a ayudar a los demás sin esperar nada a 
+              cambio, y comparte sus amplios conocimientos de manera generosa</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Maria Natalia Rodríguez Serna</h1>
+        <p>La <strong>Directora de Desarrollo de Software</strong> lidera el equipo técnico y es la responsable de la calidad y la innovación
+           de los productos de software de la empresa. Supervisa la arquitectura, el desarrollo y la implementación de las 
+           soluciones, asegurando que se cumplan los más altos estándares técnicos.  </p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card">  
+          <img src="./imagenes/JuanD.png">
+        </div>
+        <div class="more-info">
+          <h1>Juan David Arango Buitrago</h1>
+          <div class="coords">
+            <span>Se unió en Enero 2023</span>
+          </div>
+          <div class="coords">
+            <p>Juan David, en Qualitic Solution, es una persona responsable y siempre dispuesta a aprender y expandir
+               sus conocimientos. Su actitud colaborativa y comprensiva lo convierte en un gran compañero de equipo. 
+               Además, se caracteriza por su enfoque centrado en el trabajo, lo que le permite abordar los desafíos 
+               con determinación y eficacia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Juan David Arango Buitrago</h1>
+        <p>El <strong>Director Administrativo</strong> es responsable de la gestión operativa interna de la empresa, cubriendo áreas clave 
+          como finanzas, recursos humanos y administración. Se asegura de que los procesos internos se cumplan y que los 
+          recursos de la empresa se utilicen de manera óptima.  </p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+  
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card">  
+          <img src="./imagenes/Andres.png">
+        </div>
+        <div class="more-info">
+          <h1>Andres Julian Vallejo Arango</h1>
+          <div class="coords">
+            <span>Se unió en Abril 2023</span>
+          </div>
+          <div class="coords">
+            <p>
+              Andrés Julián, en Qualitic Solutions, es una persona carismática y divertida, siempre aportando un toque de alegría al ambiente. Es eficiente y colaborativo en su trabajo, lo que lo convierte en un compañero valioso. Su expresividad y confiabilidad lo hacen destacar, creando un espacio en el que todos se sienten cómodos para compartir ideas y trabajar en equipo</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Andres Julian Vallejo Arango</h1>
+        <p>El <strong>Desarrollador Front-end</strong> es responsable de transformar los diseños en interfaces interactivas y funcionales. 
+          Utiliza tecnologías como HTML, CSS y JavaScript para crear la parte visible y de interacción de los sitios web y 
+          aplicaciones, asegurándose de que sean accesibles y responsive en todos los dispositivos.</p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card">  
+          <img src="./imagenes/juanDi.png">
+        </div>
+        <div class="more-info">
+          <h1>Juan Diego Arcila Giraldo</h1>
+          <div class="coords">
+            <span>Se unió en Marzo 2024</span>
+          </div>
+          <div class="coords">
+            <p>Juan Diego, en Qualitic Solution, es una persona que disfruta interactuar con el equipo y aportar ideas creativas para diversas situaciones que surgen en la empresa. Es un excelente diseñador, siempre buscando lo mejor en su campo para garantizar que todo se vea excepcional.</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Juan Diego Arcila Giraldo</h1>
+        <p>El <strong>Diseñador</strong> es el responsable de la creación y desarrollo de la identidad visual de los proyectos de la empresa.
+           Define el estilo visual y la experiencia de usuario (UI/UX), asegurando que cada diseño sea coherente con la
+           identidad de la marca y esté alineado con las expectativas del cliente.</p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card">  
+          <img src="./imagenes/primo.png">
+        </div>
+        <div class="more-info">
+          <h1>Santiago Andres Rubio Tabares</h1>
+          <div class="coords">
+            <span>Se unió en Agosto 2024</span>
+          </div>
+          <div class="coords">
+            <p>Santiago, en Qualitic Solution, es una persona muy divertida, espontánea y extrovertida. Su energía y expresiones contagiosas generan un ambiente ameno en la oficina. Además, su curiosidad innata y su deseo de aprender le permiten enfrentar con éxito los retos que surgen en su trabajo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Santiago Andres Rubio Tabares</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.</p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="additional">
+        <div class="user-card">  
+          <img src="./imagenes/kevin.png">
+        </div>
+        <div class="more-info">
+          <h1>Kevin Santiago Castaño Orjuela</h1>
+          <div class="coords">
+            <span>Se unió en Abril 2023</span>
+          </div>
+          <div class="coords">
+            <p>Kevin, en Qualitic Solution, es una persona callada pero sumamente trabajadora. Destaca por su excelente capacidad de trabajo en equipo y su inteligencia. Todo lo que se propone, lo cumple con dedicación y compromiso</p>
+          </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>Kevin Santiago Castaño Orjuela</h1>
+        <p>El <strong>Desarrollador Back-end</strong> es responsable de la estructura y funcionamiento interna de las aplicaciones y sitios
+           web, asegurándose de que todo lo que ocurre "detrás de escena" funcione sin problemas.  </p>
+        <span class="more">QUALITIC SOLUTION S.A.S</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

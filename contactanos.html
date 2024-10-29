@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery  --> 
+    <script src="ext/jquery.min.js"></script>
+
+    <!-- jQueryUI  --> 
+    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.min.css">
+    <script src="ext/jqueryui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/codigoBack.js"></script>
+    <script src="https://kit.fontawesome.com/81977c2737.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="logo-header">
+                <img src="imagenes/logo_en_blanco.png">
+            </div>
+            <div class="menu-header">
+                <span>Inicio</span>  
+                <span>Servicios</span>
+                <span>Tecnologías</span>
+                <span>Fases del desarrollo</span>
+                <span>Clientes</span>
+                <span>Quiénes somos</span>
+                <span>Contáctanos</span>
+            </div>    
+        </div>
+    </header>
+    <div class="container-contactanos">
+        <div class="inicio-contacto">
+            <div class="tittle-contact">
+                <h1>Contáctanos para tu software</h1>
+            </div>
+        </div>
+        <div class="formulario-contact">
+            <form action="">
+                <div class="form-group">
+                    <label class="control-label">¿Cuál es tu nombre?</label>
+                    <input class="form-control" type="text" id="Usu_Nombre">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">¿Cuál es tu correo electrónico?</label>
+                    <input class="form-control" type="text" id="Usu_Correo">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">¿Cuál es tu teléfono?</label>
+                    <input class="form-control" type="text" id="Usu_telefono">
+                </div>
+                <div class="group_person">
+                    <label class="control-label">¿Eres empresa o particular?</label>
+                    <div class="particulation"> 
+                        <label class="control-label">Particular</label>
+                        <input class="form-control" type="radio" id="particular" value="1" name="Particular">
+                    </div>
+                    <div class="word_eps">
+                        <label class="control-label">Empresa</label>
+                        <input class="form-control" type="radio" id="empresa" value="1" name="Particular">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">¿Cuál es tu teléfono?</label>
+                    <select id="Usu_Situacion">
+                        <option value="1">Tengo una idea de proyecto pero necesito ayuda</option>
+                        <option value="2">Busco quien mantenga mi programa, web o aplicación</option>
+                        <option value="3">Tengo un proyecto a medias y me gustaría poder terminarlo</option>
+                        <option value="4">Necesito subcontratar un servicio de programación</option>
+                        <option value="5">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Cuentanos qué necesitas (opcional)</label>
+                    <textarea id="Usu_Comentario"></textarea>
+                </div>
+                <div class="politica">
+                    <a href="">Política de privacidad</a>
+                </div>
+                <div class="accept_politic">
+                    <label class="control-label">Acepto la política de privacidad</label>
+                    <input type="checkbox">
+                </div>
+                <div class="button_form">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="information-work">
+            <div class="adress-telephone-email">
+                <div class="item">
+                    <span><img src="imagenes/telefono.png"></span>
+                    <p>Llamanos al</p>
+                    <p>+57 321 768 6810</p>
+                </div>
+                <div class="item">
+                    <span><img src="imagenes/ubicacion.png"></span>
+                    <p>Dirección</p>
+                    <p>Cl 49e #10c-29 (Manizales-Caldas)</p>
+                </div>
+                <div class="item">
+                    <span><img src="imagenes/adrees.png"></span>
+                    <p>correo</p>
+                    <p>informacion@qualiticsolution.com</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2041872106684!2d-75.49655999020865!3d5.070627938319953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4
+                f13.1!3m3!1m2!1s0x8e476f8fe0b56a85%3A0x5ca856810b14a702!2sCl.%2049e%20%2310c-29%2C%20Manizales%2C%20Caldas!5e0!3m2!1ses-419!2sco!4v1706125626192!5m2!
+                1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="social-media">
+                <div class="tittle-social-media">
+                    <h1>Siguenos</h1>
+                </div>
+                <div class="reds">
+                    <ul class="wrapper">
+                        <li class="icon facebook">
+                          <span class="tooltip">Facebook</span>
+                          <span><i class="fab fa-facebook-f"></i></span>
+                        </li>
+                        <li class="icon twitter">
+                          <span class="tooltip">Twitter</span>
+                          <span><i class="fab fa-x-twitter"></i></span>
+                        </li>
+                        <li class="icon instagram">
+                          <span class="tooltip">Instagram</span>
+                          <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                        <li class="icon whatsApp">
+                          <span class="tooltip">WhatsApp</span>
+                          <span><i class="fab fa-whatsapp"></i></span>
+                        </li>
+                        <li class="icon linkedin">
+                          <span class="tooltip">Linkedin</span>
+                          <span><i class="fab fa-linkedin"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
