@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analitica</title>
+    <script src="ext/jquery.min.js"></script>
+
+    <!-- jQueryUI  -->
+    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.min.css">
+    <script src="ext/jqueryui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/codigoBack.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Desactivar el botón de retroceso del navegador
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    });
+    </script>
+</head>
+
+<body>
+    <div class="analitica_web">
+        <div class="content-analitica">
+            <div class="tittle-analitica">
+              <div class="content-titulo-analitica">
+                <img src="imagenes/A_letra_corta.png">
+              </div>
+                <h1>nalítica<br>
+                  de datos</h1>
+            </div>
+            <div class="text-analitica">
+                <p>
+                    Convierte Datos en Oportunidades, con la analítica de datos transformamos la información en decisiones estratégicas
+                     y accionables. A través de la recopilación y el análisis de datos, te ayudamos a descubrir patrones y tendencias 
+                     clave que impulsan el rendimiento de tu negocio. </p>
+            </div>
+            <div class="subtittle-analitica">
+                <h1>¿Qué Ofrecemos <br>
+                   con la Analítica de Datos? </h1>
+            </div>
+            <div class="text-analitica-sub">
+                <p>
+                    <strong>Recopilación de Datos: </strong> Monitorizamos y capturamos datos relevantes de tu sitio web, redes sociales y plataformas digitales para obtener una visión completa del comportamiento de tus usuarios. 
+                    <br>
+                   <strong> Visualización Clara: </strong> Presentamos los datos a través de gráficos e informes interactivos fáciles de entender, para que puedas tomar decisiones basadas en datos con confianza.  
+                    <br>
+                    <strong>Predicción y Tendencias: </strong> Utilizamos modelos predictivos para anticipar comportamientos futuros, lo que te permite planificar y adaptar tus acciones antes de que ocurran.  </p>
+            </div>
+            <div class="buttom-back">
+                <button id="boton-back2" class="custom-btn btn-8"><span>Atrás</span></button>
+            </div>
+        </div>
+        <div class="video-analitica">
+            <img src="imagenes/img_desarrollo.png" >
+        </div>
+    </div>
+</body>
+</html>

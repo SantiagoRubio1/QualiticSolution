@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- jQuery  --> 
-    <script src="ext/jquery.min.js"></script>
-    
-    <!-- jQueryUI  --> 
-    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.min.css">
-    <script src="ext/jqueryui/jquery-ui.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/codigo.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QualiticSolution</title>
+  <!-- jQuery  -->
+  <script src="ext/jquery.min.js"></script>
+
+  <!-- jQueryUI  -->
+  <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="ext/jqueryui/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="ext/jqueryui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/codigo.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="imagenes/Logo-QualiticSolution.ico" />
 </head>
+
 <body>
   <header>
     <div class="container-header">
-        <div class="menu-header">
-            <span>Inicio</span>  
-            <span>Servicios</span>
-            <span>Tecnologías</span>
-            <span>Fases del desarrollo</span>
-            <span>Clientes</span>
-            <span>Quiénes somos</span>
-            <span>Contáctanos</span>
-        </div>    
+      <div class="menu-header">
+        <a href="#Servicios"><span>Servicios</span></a>
+        <a href="#Tecnologias"><span>Tecnologías</span></a>
+        <a href="#Fases"><span>Fases del desarrollo</span></a>
+        <a href="#clientes-section"><span>Clientes</span></a>
+        <a href="#Quienes_Somos"><span>Quiénes somos</span></a>
+        <a href="#blog"><span>Blog</span></a>
+        <a href="https://qualiticsolution.com/qualiticsolution.com/nuevo/contactanos.html"><span>Contáctanos</span></a>
+      </div>
+      <div class="menu-header-movil">
+        <span class="mobile-btn"></span>
+        <ul class="menu-mobile">
+          <li><a href="#Servicios"><span>Servicios</span></a></li>
+          <li><a href="#Tecnologias"><span>Tecnologías</span></a></li>
+          <li><a href="#Fases"><span>Fases del desarrollo</span></a></li>
+          <li><a href="#clientes-section"><span>Clientes</span></a></li>
+          <li><a href="#Quienes_Somos"><span>Quiénes somos</span></a></li>
+          <li><a href="#blog"><span>Blog</span></a></li>
+          <li><a href="https://qualiticsolution.com/qualiticsolution.com/nuevo/contactanos.html"><span>Contáctanos</span></a></li>
+        </ul>
+      </div>
     </div>
   </header>
-  <div class="inicio-pagina">
+
+  <div class="inicio-pagina" id="inicio">
     <div class="line_icon">
       <div class="raya"></div>
       <div class="logo_home">
@@ -39,71 +57,64 @@
     <div class="content-inicio">
       <div class="tittle-inicio">
         <h1>Innovación digital
-            a tu servicio</h1>
-         <span>tu visión nuestra tecnología</span>
+          a tu servicio</h1>
+        <span>tu visión nuestra tecnología</span>
       </div>
       <div class="buttom-contact">
         <h3>Oprime aquí</h3>
-        <button>Contrata tu software</button>
+        <a href="https://qualiticsolution.com/qualiticsolution.com/nuevo/contactanos.html">
+          <button>Contrata tu software</button>
+        </a>
       </div>
     </div>
   </div>
-
   <div class="servicios_new" id="Servicios">
     <div class="container_servicios">
       <div class="title_servi">
         <h1>SERVICIOS</h1>
       </div>
       <div class="content_servicios">
-        <div class="item servicio1">
-          <!-- <a href=""> -->
-            <div class="img_servicios">
-              <img id="image1" class="vibra" src="imagenes/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg">
-            </div>
-            <div class="title_DWM">
-              <h1>Desarrollo Web a la Medida</h1>
-            </div>
-          <!-- </a> -->
+        <div class="item servicio1" data-tooltip="Haz click para mas información">
+          <div class="img_servicios">
+            <img id="image1" class="vibra" src="imagenes/DesarrolloW.webp">
+          </div>
+          <div class="title_image-desarrollo">
+            <h1>Desarrollo Web a la Medida</h1>
+          </div>
         </div>
-        <div class="item servicio2">
-          <!-- <a href=""> -->
-            <div class="img_servicios">
-              <img id="image2" class="vibra" src="imagenes/online-web-design.jpg">
-            </div>
-            <div class="title_DWM">
-              <h1>Diseño de Páginas Web</h1>
-            </div>
-          <!-- </a> -->
+        <div class="item servicio2" data-tooltip="Haz click para mas información">
+          <div class="img_servicios">
+            <img id="image2" class="vibra" src="imagenes/DiseñoW.webp">
+          </div>
+          <div class="title_image-diseño">
+            <h1>Diseño de Páginas Web</h1>
+          </div>
         </div>
-        <div class="item servicio3">
-          <!-- <a href=""> -->
-            <div class="img_servicios">
-              <img id="image3" class="vibra" src="imagenes/analitica.jpg">
-            </div>
-            <div class="title_DWM">
-              <h1>Analítica de Datos</h1>
-            </div>
-          <!-- </a> -->
+        <div class="item servicio3" data-tooltip="Haz click para mas información">
+          <div class="img_servicios">
+            <img id="image3" class="vibra" src="imagenes/AnaliticaDatos.webp">
+          </div>
+          <div class="title_image-analitica">
+            <h1>Analítica de Datos</h1>
+          </div>
         </div>
-        <div class="item servicio4">
-          <!-- <a href=""> -->
-            <div class="img_servicios">
-              <img id="image4" class="vibra" src="imagenes/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg">
-            </div>
-            <div class="title_DWM">
-              <h1>Dominio y Hosting</h1>
-            </div>
-          <!-- </a> -->
+        <div class="item servicio4" data-tooltip="Haz click para mas información">
+          <div class="img_servicios">
+            <img id="image4" class="vibra"
+              src="imagenes/DyH.jpg">
+          </div>
+          <div class="title_image-dominio">
+            <h1>Dominio y Hosting</h1>
+          </div>
         </div>
       </div>
     </div>
     <input type="hidden" id="tipo_animacion">
   </div>
-
-  <div class="tecnologias">
+  <div class="tecnologias" id="Tecnologias">
     <div class="difuminado"></div>
     <div class="title_tecnologias">
-      <h1>TECNOLOGÍAS</h1>
+      <h1>Tecnologías</h1>
     </div>
     <div class="target">
       <div class="card">
@@ -119,24 +130,23 @@
             <img src="imagenes/javascript_logo.png">
             <img src="imagenes/sass_logo.png">
             <img src="imagenes/boostrap_logo.png">
+            <img src="imagenes/Wordpress-Logo.png">
           </div>
         </div>
       </div>
-
       <div class="card">
         <div class="face front">
           <img src="imagenes/Backend.png">
           <h3>Tecnologías Backend</h3>
         </div>
         <div class="face back">
-          <h3>Tecnologias Backend</h3>
+          <h3>Tecnologías Backend</h3>
           <div class="iconos-technology backing">
             <img src="imagenes/Php.png">
             <img src="imagenes/mariadb_logo.png">
           </div>
         </div>
       </div>
-
       <div class="card">
         <div class="face front">
           <img src="imagenes/Servidores.png">
@@ -157,7 +167,7 @@
           <h3>Tecnologías Analítica de datos</h3>
         </div>
         <div class="face back">
-          <h3>Tecnologías Analítica de datos</h3> 
+          <h3>Tecnologías Analítica de datos</h3>
           <div class="iconos-technology analitic">
             <img src="imagenes/phyton_logo.png">
             <img src="imagenes/powerbi_logo.png">
@@ -165,31 +175,31 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
-
-  <div class="container-proceso_desarollo">
+  <div class="container-proceso_desarollo" id="Fases">
     <div class="container-acordeon">
       <div class="tittle-desarollo">
         <h1>
           Fases del proceso del desarrollo de software
         </h1>
       </div>
+
       <div class="content-acordeon buron">
         <div id="analisisNecesidad" class="accordion abrir" data-num="1">
           <div class="t_simbol">
             <span class="imagen-plus">
-              <img class="mostrar plus1" src="imagenes/flecha.png">
-              <img class="no_mostrar minus1" src="imagenes/FlechaAbajo.png">
+              <img class="mostrar plus1" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus1" src="imagenes/typcn--minus.png">
             </span>
             <div class="accordion-header">Análisis de la Necesidad</div>
           </div>
           <div class="accordion-content">
-            <p> 
-              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más 
-              importante para conseguir dar el paso correcto hacia la digitalización. 
-              Analizar detalladamente y extraer las necesidades y los procesos a 
-              mejorar. Mediante este análisis, obtener los requisitos que determinaran 
+            <p>
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más
+              importante para conseguir dar el paso correcto hacia la digitalización.
+              Analizar detalladamente y extraer las necesidades y los procesos a
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran
               el software a medida.
             </p>
           </div>
@@ -198,18 +208,18 @@
       <div class="content-acordeon buron">
         <div id="desarrolloSoftware" class="accordion abrir" data-num="2">
           <div class="t_simbol">
-            <div class="imagen-plus">
-              <img class="mostrar plus2" src="imagenes/flecha.png">
-              <img class="no_mostrar minus2" src="imagenes/FlechaAbajo.png">
-            </div>
+            <span class="imagen-plus">
+              <img class="mostrar plus2" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus2" src="imagenes/typcn--minus.png">
+            </span>
             <div class="accordion-header">Desarrollo del software</div>
           </div>
           <div class="accordion-content">
-            <p> 
-              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más 
-              importante para conseguir dar el paso correcto hacia la digitalización. 
-              Analizar detalladamente y extraer las necesidades y los procesos a 
-              mejorar. Mediante este análisis, obtener los requisitos que determinaran 
+            <p>
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más
+              importante para conseguir dar el paso correcto hacia la digitalización.
+              Analizar detalladamente y extraer las necesidades y los procesos a
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran
               el software a medida.
             </p>
           </div>
@@ -218,18 +228,18 @@
       <div class="content-acordeon buron">
         <div id="PuestaMarcha" class="accordion abrir" data-num="3">
           <div class="t_simbol">
-            <div class="imagen-plus">
-              <img class="mostrar plus3" src="imagenes/flecha.png">
-              <img class="no_mostrar minus3" src="imagenes/FlechaAbajo.png">
-            </div>
+            <span class="imagen-plus">
+              <img class="mostrar plus3" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus3" src="imagenes/typcn--minus.png">
+            </span>
             <div class="accordion-header">Puesta en marcha</div>
           </div>
           <div class="accordion-content">
-            <p> 
-              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más 
-              importante para conseguir dar el paso correcto hacia la digitalización. 
-              Analizar detalladamente y extraer las necesidades y los procesos a 
-              mejorar. Mediante este análisis, obtener los requisitos que determinaran 
+            <p>
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más
+              importante para conseguir dar el paso correcto hacia la digitalización.
+              Analizar detalladamente y extraer las necesidades y los procesos a
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran
               el software a medida.
             </p>
           </div>
@@ -239,231 +249,636 @@
         <div id="mantenimiento" class="accordion abrir" data-num="4">
           <div class="t_simbol">
             <span class="imagen-plus">
-              <img class="mostrar plus4" src="imagenes/flecha.png">
-              <img class="no_mostrar minus4" src="imagenes/FlechaAbajo.png">
+              <img class="mostrar plus4" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus4" src="imagenes/typcn--minus.png">
             </span>
             <div class="accordion-header">Mantenimiento</div>
           </div>
           <div class="accordion-content">
-            <p> 
-              Atendemos las posibles incidencias detectadas en el uso del software y 
-              las solucionamos en un proceso transparente para todos. La experiencia 
-              de todo el que trabaje con el software ha de ser la mejor posible y para 
-              eso hay que realizar un mantenimiento que permita resolver cualquier 
+            <p>
+              Atendemos las posibles incidencias detectadas en el uso del software y
+              las solucionamos en un proceso transparente para todos. La experiencia
+              de todo el que trabaje con el software ha de ser la mejor posible y para
+              eso hay que realizar un mantenimiento que permita resolver cualquier
               imprevisto.
             </p>
           </div>
         </div>
       </div>
+
+      
+      
+
     </div>
     <div class="container-image">
       <div class="flipper" id="flipper">
-        <img id="collage" class="roll-in-top" src="imagenes/IMG_pasos_desarrolloSotware.jpg" alt="Image A">
+        <!-- <img id="collage" src="imagenes/fondo_codigo.png" alt="Image A"> -->
+      </div>
+    </div>
+    <div class="container-acordeon2">
+      <div class="tittle-desarollo">
+        <h1>
+          Fases del proceso del desarrollo de software
+        </h1>
+      </div>
+      <div class="content-acordeon2 buron">
+        <div id="analisisNecesidad2" class="accordion abrir" data-num="1">
+          <div class="t_simbol">
+            <span class="imagen-plus">
+              <img class="mostrar plus1" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus1" src="imagenes/typcn--minus.png">
+            </span>
+            <div class="accordion-header">Análisis de la Necesidad</div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más
+              importante para conseguir dar el paso correcto hacia la digitalización.
+              Analizar detalladamente y extraer las necesidades y los procesos a
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran
+              el software a medida.
+            </p>
+          </div>
+          <div class="flipper" id="flipper2">
+            <!-- <img id="collage" src="imagenes/fondo_codigo.png" alt="Image A"> -->
+          </div>
+        </div>
+      </div>
+      <div class="content-acordeon2 buron">
+        <div id="desarrolloSoftware2" class="accordion abrir" data-num="2">
+          <div class="t_simbol">
+            <span class="imagen-plus">
+              <img class="mostrar plus2" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus2" src="imagenes/typcn--minus.png">
+            </span>
+            <div class="accordion-header">Desarrollo del software</div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más
+              importante para conseguir dar el paso correcto hacia la digitalización.
+              Analizar detalladamente y extraer las necesidades y los procesos a
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran
+              el software a medida.
+            </p>
+          </div>
+          <div class="flipper" id="flipper3">
+            <!-- <img id="collage" src="imagenes/fondo_codigo.png" alt="Image A"> -->
+          </div>
+        </div>
+      </div>
+      <div class="content-acordeon2 buron">
+        <div id="PuestaMarcha2" class="accordion abrir" data-num="3">
+          <div class="t_simbol">
+            <span class="imagen-plus">
+              <img class="mostrar plus3" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus3" src="imagenes/typcn--minus.png">
+            </span>
+            <div class="accordion-header">Puesta en marcha</div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Conocer el trasfondo y la manera de trabajar de tu empresa es lo más
+              importante para conseguir dar el paso correcto hacia la digitalización.
+              Analizar detalladamente y extraer las necesidades y los procesos a
+              mejorar. Mediante este análisis, obtener los requisitos que determinaran
+              el software a medida.
+            </p>
+          </div>
+          <div class="flipper" id="flipper4">
+            <!-- <img id="collage" src="imagenes/fondo_codigo.png" alt="Image A"> -->
+          </div>
+        </div>
+      </div>
+      <div class="content-acordeon2">
+        <div id="mantenimiento2" class="accordion abrir" data-num="4">
+          <div class="t_simbol">
+            <span class="imagen-plus">
+              <img class="mostrar plus4" src="imagenes/typcn--plus.png">
+              <img class="no_mostrar minus4" src="imagenes/typcn--minus.png">
+            </span>
+            <div class="accordion-header">Mantenimiento</div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Atendemos las posibles incidencias detectadas en el uso del software y
+              las solucionamos en un proceso transparente para todos. La experiencia
+              de todo el que trabaje con el software ha de ser la mejor posible y para
+              eso hay que realizar un mantenimiento que permita resolver cualquier
+              imprevisto.
+            </p>
+          </div>
+          <div class="flipper" id="flipper5">
+            <!-- <img id="collage" src="imagenes/fondo_codigo.png" alt="Image A"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fonditos_circulos">
+      <img src=>
+    </div>
+  </div>
+  <div class="nuestro-equipo"  id="Quienes_Somos">
+    <div class="tittle-equipo">
+      <h1>¿Quiénes Somos?</h1>
+    </div>
+    <div class="content-equipo">
+      <div class="text-equipo">
+        <p>
+          Nos esforzamos por conectar ideas y crear experiencias digitales excepcionales. A través de nuestro
+          compromiso con la Transformación digital en el desarrollo web a la medida, diseño innovador de páginas
+          web y análisis de datos, buscamos ser la fuerza impulsora detrás del éxito de nuestros clientes, combinando
+          la visión de las nuevas generaciones con la excelencia técnica.
+        </p>
       </div>
     </div>
   </div>
-  
   <div class="center">
-    <div class="card">
-      <div class="additional">
-        <div class="user-card">
-          <img src="./imagenes/Karen.png">
-        </div>
-        <div class="more-info">
-          <h1>Karen Dayanna Castaño Orjuela</h1>
-          <div class="coords">
-            <span>Se unió en Enero 2023</span>
-          </div>
-          <div class="coords">
-            <p>
-              Karen, en Qualitic Solution, es una persona bondadosa y amable. Se dedica con esmero a sus responsabilidades
-              , mostrando un enfoque admirable en su trabajo. Su presencia inspira respeto y aporta un ambiente de orden y
-              limpieza en la oficina.</p>
-          </div>
-        </div>
-      </div>
-      <div class="general">
-        <h1>Karen Dayanna Castaño Orjuela</h1>
-        <p>Es la líder estratégica de la empresa, encargada de supervisar y dirigir todas las áreas operativas y de negocio.
-           Se asegura de que la empresa esté alineada con su misión y visión, tomando decisiones clave para el crecimiento,
-           la innovación y la eficiencia. </p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
+    <div class="quienes_somos">
+      <h1>Nuestro</h1>
+      <h1 class="ss">equipo</h1>
     </div>
+    <div class="carts_person">
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/Karen.png">
+          </div>
+          <div class="more-info">
+            <h1>Karen Dayanna</h1>
+            <div class="coords">
+              <span>Se unió en Enero 2023</span>
+            </div>
+            <div class="coords">
+              <p>
+                Karen, en Qualitic Solution, es una persona bondadosa y amable. Se dedica con esmero a sus
+                responsabilidades
+                , mostrando un enfoque admirable en su trabajo. Su presencia inspira respeto y aporta un ambiente de
+                orden y
+                limpieza en la oficina.</p>
+            </div>
+          </div>
+        </div>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/Karen.png">
+          </div>
+          <h1>Karen Dayanna</h1>
+          <p>Es la líder estratégica de la empresa, encargada de supervisar y dirigir todas las áreas operativas y de
+            negocio.
+            Se asegura de que la empresa esté alineada con su misión y visión, tomando decisiones clave para el
+            crecimiento,
+            la innovación y la eficiencia. </p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
+        </div>
+      </div>
 
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card"> 
-          <img src="./imagenes/David.png"> 
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/David.png">
+          </div>
+          <div class="more-info">
+            <h1>David Fernando</h1>
+            <div class="coords">
+              <span>Se unió en Enero 2023</span>
+            </div>
+            <div class="coords">
+              <p>
+                David, en Qualitic Solution, es una persona que irradia buena energía y un toque de locura positiva.
+                Su amabilidad es evidente en su generosidad para compartir conocimientos, especialmente en el ámbito
+                de la programación. Su apertura y disposición hacen de él un gran compañero de trabajo</p>
+            </div>
+          </div>
         </div>
-        <div class="more-info">
-          <h1>David Fernando Tabares Vera</h1>
-          <div class="coords">
-            <span>Se unió en Enero 2023</span>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/David.png">
           </div>
-          <div class="coords">
-            <p>
-              David, en Qualitic Solution, es una persona que irradia buena energía y un toque de locura positiva. 
-              Su amabilidad es evidente en su generosidad para compartir conocimientos, especialmente en el ámbito
-              de la programación. Su apertura y disposición hacen de él un gran compañero de trabajo</p>
-          </div>
+          <h1>David Fernando</h1>
+          <p>El <strong>Director de Proyectos</strong> es responsable de la planificación, gestión y ejecución de los
+            proyectos de software.
+            Supervisa todas las fases del ciclo de vida del proyecto, asegurándose de que los tiempos, costos y
+            expectativas de los clientes se cumplan. </p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
         </div>
       </div>
-      <div class="general">
-        <h1>David Fernando Tabares Vera</h1>
-        <p>El <strong>Director de Proyectos</strong> es responsable de la planificación, gestión y ejecución de los proyectos de software.
-           Supervisa todas las fases del ciclo de vida del proyecto, asegurándose de que los tiempos, costos y 
-           expectativas de los clientes se cumplan.  </p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
-    </div>
 
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card"> 
-          <img src="./imagenes/Nata .png"> 
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/Nata .png">
+          </div>
+          <div class="more-info">
+            <h1>Maria Natalia</h1>
+            <div class="coords">
+              <span>Se unió en Enero 2023</span>
+            </div>
+            <div class="coords">
+              <p>Natalia, en Qualitic Solution, es una persona reservada, pero cuando sus compañeros interactúan con
+                ella,
+                se convierte en alguien divertida y amable. Siempre está dispuesta a ayudar a los demás sin esperar nada
+                a
+                cambio, y comparte sus amplios conocimientos de manera generosa</p>
+            </div>
+          </div>
         </div>
-        <div class="more-info">
-          <h1>Maria Natalia Rodríguez Serna</h1>
-          <div class="coords">
-            <span>Se unió en Enero 2023</span>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/Nata .png">
           </div>
-          <div class="coords">
-            <p>Natalia, en Qualitic Solution, es una persona reservada, pero cuando sus compañeros interactúan con ella, 
-              se convierte en alguien divertida y amable. Siempre está dispuesta a ayudar a los demás sin esperar nada a 
-              cambio, y comparte sus amplios conocimientos de manera generosa</p>
-          </div>
+          <h1>Maria Natalia</h1>
+          <p>La <strong>Directora de Desarrollo de Software</strong> lidera el equipo técnico y es la responsable de la
+            calidad y la innovación
+            de los productos de software de la empresa. Supervisa la arquitectura, el desarrollo y la implementación de
+            las
+            soluciones, asegurando que se cumplan los más altos estándares técnicos. </p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
         </div>
       </div>
-      <div class="general">
-        <h1>Maria Natalia Rodríguez Serna</h1>
-        <p>La <strong>Directora de Desarrollo de Software</strong> lidera el equipo técnico y es la responsable de la calidad y la innovación
-           de los productos de software de la empresa. Supervisa la arquitectura, el desarrollo y la implementación de las 
-           soluciones, asegurando que se cumplan los más altos estándares técnicos.  </p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
-    </div>
 
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card">  
-          <img src="./imagenes/JuanD.png">
-        </div>
-        <div class="more-info">
-          <h1>Juan David Arango Buitrago</h1>
-          <div class="coords">
-            <span>Se unió en Enero 2023</span>
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/JuanD.png">
           </div>
-          <div class="coords">
-            <p>Juan David, en Qualitic Solution, es una persona responsable y siempre dispuesta a aprender y expandir
-               sus conocimientos. Su actitud colaborativa y comprensiva lo convierte en un gran compañero de equipo. 
-               Además, se caracteriza por su enfoque centrado en el trabajo, lo que le permite abordar los desafíos 
-               con determinación y eficacia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="general">
-        <h1>Juan David Arango Buitrago</h1>
-        <p>El <strong>Director Administrativo</strong> es responsable de la gestión operativa interna de la empresa, cubriendo áreas clave 
-          como finanzas, recursos humanos y administración. Se asegura de que los procesos internos se cumplan y que los 
-          recursos de la empresa se utilicen de manera óptima.  </p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
-    </div>
-  
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card">  
-          <img src="./imagenes/Andres.png">
-        </div>
-        <div class="more-info">
-          <h1>Andres Julian Vallejo Arango</h1>
-          <div class="coords">
-            <span>Se unió en Abril 2023</span>
-          </div>
-          <div class="coords">
-            <p>
-              Andrés Julián, en Qualitic Solutions, es una persona carismática y divertida, siempre aportando un toque de alegría al ambiente. Es eficiente y colaborativo en su trabajo, lo que lo convierte en un compañero valioso. Su expresividad y confiabilidad lo hacen destacar, creando un espacio en el que todos se sienten cómodos para compartir ideas y trabajar en equipo</p>
+          <div class="more-info">
+            <h1>Juan David</h1>
+            <div class="coords">
+              <span>Se unió en Enero 2023</span>
+            </div>
+            <div class="coords">
+              <p>Juan David, en Qualitic Solution, es una persona responsable y siempre dispuesta a aprender y expandir
+                sus conocimientos. Su actitud colaborativa y comprensiva lo convierte en un gran compañero de equipo.
+                Además, se caracteriza por su enfoque centrado en el trabajo, lo que le permite abordar los desafíos
+                con determinación y eficacia.</p>
+            </div>
           </div>
         </div>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/JuanD.png">
+          </div>
+          <h1>Juan David</h1>
+          <p>El <strong>Director Administrativo</strong> es responsable de la gestión operativa interna de la empresa,
+            cubriendo áreas clave
+            como finanzas, recursos humanos y administración. Se asegura de que los procesos internos se cumplan y que
+            los
+            recursos de la empresa se utilicen de manera óptima. </p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
+        </div>
       </div>
-      <div class="general">
-        <h1>Andres Julian Vallejo Arango</h1>
-        <p>El <strong>Desarrollador Front-end</strong> es responsable de transformar los diseños en interfaces interactivas y funcionales. 
-          Utiliza tecnologías como HTML, CSS y JavaScript para crear la parte visible y de interacción de los sitios web y 
-          aplicaciones, asegurándose de que sean accesibles y responsive en todos los dispositivos.</p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
-    </div>
 
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card">  
-          <img src="./imagenes/juanDi.png">
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/Andres.png">
+          </div>
+          <div class="more-info">
+            <h1>Andres Julian</h1>
+            <div class="coords">
+              <span>Se unió en Abril 2023</span>
+            </div>
+            <div class="coords">
+              <p>
+                Andrés Julián, en Qualitic Solutions, es una persona carismática y divertida, siempre aportando un toque
+                de alegría al ambiente. Es eficiente y colaborativo en su trabajo, lo que lo convierte en un compañero
+                valioso. Su expresividad y confiabilidad lo hacen destacar, creando un espacio en el que todos se
+                sienten cómodos para compartir ideas y trabajar en equipo</p>
+            </div>
+          </div>
         </div>
-        <div class="more-info">
-          <h1>Juan Diego Arcila Giraldo</h1>
-          <div class="coords">
-            <span>Se unió en Marzo 2024</span>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/Andres.png">
           </div>
-          <div class="coords">
-            <p>Juan Diego, en Qualitic Solution, es una persona que disfruta interactuar con el equipo y aportar ideas creativas para diversas situaciones que surgen en la empresa. Es un excelente diseñador, siempre buscando lo mejor en su campo para garantizar que todo se vea excepcional.</p>
-          </div>
+          <h1>Andres Julian</h1>
+          <p>El <strong>Desarrollador Front-end</strong> es responsable de transformar los diseños en interfaces
+            interactivas y funcionales.
+            Utiliza tecnologías como HTML, CSS y JavaScript para crear la parte visible y de interacción de los sitios
+            web y
+            aplicaciones, asegurándose de que sean accesibles y responsive en todos los dispositivos.</p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
         </div>
       </div>
-      <div class="general">
-        <h1>Juan Diego Arcila Giraldo</h1>
-        <p>El <strong>Diseñador</strong> es el responsable de la creación y desarrollo de la identidad visual de los proyectos de la empresa.
-           Define el estilo visual y la experiencia de usuario (UI/UX), asegurando que cada diseño sea coherente con la
-           identidad de la marca y esté alineado con las expectativas del cliente.</p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
-    </div>
 
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card">  
-          <img src="./imagenes/primo.png">
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/juanDi.png">
+          </div>
+          <div class="more-info">
+            <h1>Juan Diego</h1>
+            <div class="coords">
+              <span>Se unió en Marzo 2024</span>
+            </div>
+            <div class="coords">
+              <p>Juan Diego, en Qualitic Solution, es una persona que disfruta interactuar con el equipo y aportar ideas
+                creativas para diversas situaciones que surgen en la empresa. Es un excelente diseñador, siempre
+                buscando lo mejor en su campo para garantizar que todo se vea excepcional.</p>
+            </div>
+          </div>
         </div>
-        <div class="more-info">
-          <h1>Santiago Andres Rubio Tabares</h1>
-          <div class="coords">
-            <span>Se unió en Agosto 2024</span>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/juanDi.png">
           </div>
-          <div class="coords">
-            <p>Santiago, en Qualitic Solution, es una persona muy divertida, espontánea y extrovertida. Su energía y expresiones contagiosas generan un ambiente ameno en la oficina. Además, su curiosidad innata y su deseo de aprender le permiten enfrentar con éxito los retos que surgen en su trabajo.</p>
-          </div>
+          <h1>Juan Diego</h1>
+          <p>El <strong>Diseñador</strong> es el responsable de la creación y desarrollo de la identidad visual de los
+            proyectos de la empresa.
+            Define el estilo visual y la experiencia de usuario (UI/UX), asegurando que cada diseño sea coherente con la
+            identidad de la marca y esté alineado con las expectativas del cliente.</p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
         </div>
       </div>
-      <div class="general">
-        <h1>Santiago Andres Rubio Tabares</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.</p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
-      </div>
-    </div>
 
-    <div class="card green">
-      <div class="additional">
-        <div class="user-card">  
-          <img src="./imagenes/kevin.png">
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/primo.png">
+          </div>
+          <div class="more-info">
+            <h1>Santiago Andres</h1>
+            <div class="coords">
+              <span>Se unió en Agosto 2024</span>
+            </div>
+            <div class="coords">
+              <p>Santiago, en Qualitic Solution, es una persona muy divertida, espontánea y extrovertida. Su energía y
+                expresiones contagiosas generan un ambiente ameno en la oficina. Además, su curiosidad innata y su deseo
+                de aprender le permiten enfrentar con éxito los retos que surgen en su trabajo.</p>
+            </div>
+          </div>
         </div>
-        <div class="more-info">
-          <h1>Kevin Santiago Castaño Orjuela</h1>
-          <div class="coords">
-            <span>Se unió en Abril 2023</span>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/primo.png">
           </div>
-          <div class="coords">
-            <p>Kevin, en Qualitic Solution, es una persona callada pero sumamente trabajadora. Destaca por su excelente capacidad de trabajo en equipo y su inteligencia. Todo lo que se propone, lo cumple con dedicación y compromiso</p>
-          </div>
+          <h1>Santiago Andres</h1>
+          <p>El practicante apoya a los desarrolladores back-end y front-end en las actividades de diseño de las
+            interfases y en el funcionamiento interno de las aplicaciones y sitios web. </p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
         </div>
       </div>
-      <div class="general">
-        <h1>Kevin Santiago Castaño Orjuela</h1>
-        <p>El <strong>Desarrollador Back-end</strong> es responsable de la estructura y funcionamiento interna de las aplicaciones y sitios
-           web, asegurándose de que todo lo que ocurre "detrás de escena" funcione sin problemas.  </p>
-        <span class="more">QUALITIC SOLUTION S.A.S</span>
+
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./imagenes/kevin.png">
+          </div>
+          <div class="more-info">
+            <h1>Kevin Santiago</h1>
+            <div class="coords">
+              <span>Se unió en Abril 2023</span>
+            </div>
+            <div class="coords">
+              <p>Kevin, en Qualitic Solution, es una persona callada pero sumamente trabajadora. Destaca por su
+                excelente capacidad de trabajo en equipo y su inteligencia. Todo lo que se propone, lo cumple con
+                dedicación y compromiso</p>
+            </div>
+          </div>
+        </div>
+        <div class="general">
+          <div class="user-card">
+            <img src="./imagenes/kevin.png">
+          </div>
+          <h1>Kevin Santiago</h1>
+          <p>El <strong>Desarrollador Back-end</strong> es responsable de la estructura y funcionamiento interna de las
+            aplicaciones y sitios
+            web, asegurándose de que todo lo que ocurre "detrás de escena" funcione sin problemas. </p>
+          <span class="more">QUALITIC SOLUTION S.A.S</span>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="clientes" id="clientes-section">
+    <div class="tittle-clientes">
+      <h1>Clientes</h1>
+    </div>
+    <div class="switch_clientes">
+      <div class="clientes-general">
+        <p id="clientes-text">Clientes que</p>
+        <p id="trabajan-text">Trabajan</p>
+      </div>
+      <div class="group_switch">
+        <input type="checkbox" id="switch" checked />
+        <label for="switch">Toggle</label>
+      </div>
+      <div class="QTS">
+        <p id="nostoros-text">Con nosotros</p>
+      </div>
+    </div>
+    <div class="logos-clientes">
+      <div class="item-clientes">
+        <div class="lamosa">
+          <span>
+            <img class="client-logo" src="imagenes/logo-lamosa.png">
+          </span>
+        </div>
+        <div class="description">
+          <p class="animation-text">
+            <strong>Grupo Lamosa</strong> <br>
+            Es un importante conglomerado mexicano fundado en 1890, líder en la industria de revestimientos
+            cerámicos y materiales para la construcción en América Latina. Con sede en Monterrey, México, el grupo ha
+            evolucionado
+            y diversificado sus operaciones a lo largo de más de un siglo, consolidándose como una de las empresas más
+            influyentes
+            en su sector en la región.
+          </p>
+        </div>
+      </div>
+      <div class="item-clientes">
+        <div class="sanlorenzo">
+          <span>
+            <img class="client-logo" src="imagenes/logo-sanLorenzo.svg">
+          </span>
+        </div>
+        <div class="description">
+          <p class="animation-text">
+            <strong>Cerámicas San Lorenzo:</strong> <br>
+            Es una empresa que se especializa en la producción y comercialización de revestimientos
+            cerámicos y porcelánicos para pisos y paredes. Con una larga trayectoria en América Latina, Cerámicas San
+            Lorenzo ha
+            ganado prestigio en Colombia por ofrecer productos de alta calidad y diseño innovador, adaptados a las
+            tendencias
+            y exigenciasdel mercado local y regional.
+          </p>
+        </div>
+      </div>
+      <div class="item-clientes">
+        <div class="ceramica">
+          <span>
+            <img class="client-logo" src="imagenes/Euroceramica.png">
+          </span>
+        </div>
+        <div class="description">
+          <p class="animation-text">
+            <strong>Eurocerámica:</strong> <br>
+            Es una empresa colombiana dedicada a la producción y comercialización de productos cerámicos y sanitarios
+            para el hogar
+            y proyectos arquitectónicos. Su portafolio incluye pisos, revestimientos, sanitarios y grifería de calidad,
+            con diseños
+            adaptados a tendencias globales y necesidades locales.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="logos-clientes-anteriores">
+      <div class="item-clientes">
+        <div class="bellota">
+          <span>
+            <img class="client-logo" src="imagenes/bellota-logo.svg">
+          </span>
+        </div>
+        <div class="description">
+          <p class="animation-text">
+            <strong>Bellota:</strong> <br>
+            Es una empresa multinacional de origen español, especializada en la fabricación de herramientas manuales
+            y productos de corte para los sectores de la construcción, agricultura, jardinería y otros oficios
+            industriales.
+            En Latinoamérica, Bellota es una marca reconocida entre los profesionales por su confiabilidad, con una
+            fuerte
+            presencia en mercados como el mexicano, colombiano y el brasileño.
+          </p>
+        </div>
+      </div>
+      <div class="item-clientes">
+        <div class="etex">
+          <span>
+            <img class="client-logo" src="imagenes/Logo_etex.png">
+          </span>
+        </div>
+        <div class="description">
+          <p class="animation-text">
+            <strong>Etex Colombia:</strong> <br>
+            Es una empresa global con sede en Bélgica, en Colombia, Etex ofrece soluciones de construcción en seco,
+            como placas de fibrocemento, yeso y materiales de aislamiento. Estos productos están dirigidos a proyectos
+            residenciales, comerciales e industriales, y buscan brindar alternativas ecológicas y eficientes para la
+            edificación.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-blog" id="blog">
+    <div class="tittle-blog">
+      <h1>Blog</h1>
+    </div>
+    <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="imagenes/Noticias/imagen_1.png" alt="Descripción de la imagen 1">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">15 Noviembre 2024</span>
+            <div class="blog-slider__title">El evento que reunirá a líderes tecnológicos en Colombia</div>
+            <div class="blog-slider__text">Para esta edición del IT Summit, Dell ha puesto un foco especial en la inteligencia artificial (IA) identificándola como una tecnología...</div>
+            <a href="#" class="modal-trigger modal-trigger-1" data-modal="modal-name-1"><span>Ver más</span></a>
+          </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="imagenes/Noticias/imagen_2.jpg" alt="Descripción de la imagen 2">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">16 Noviembre 2024</span>
+            <div class="blog-slider__title">¿El periodismo abandonará las redes sociales?</div>
+            <div class="blog-slider__text">Las redes sociales han pasado de ser espacios de interacción a herramientas de manipulación que priorizan teorías conspirativas...</div>
+            <a href="#" class="modal-trigger modal-trigger-2" data-modal="modal-name-2"><span>Ver más</span></a> <!-- Trigger Modal. -->
+          </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="imagenes/Noticias/imagen_3.png" alt="Descripción de la imagen 3">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">01 Agosta 2024</span>
+            <div class="blog-slider__title">IA Personalizada y Computación Cuántica: Innovación 2024</div>
+            <div class="blog-slider__text">Descripción: En 2024, la inteligencia artificial sigue revolucionando sectores con aplicaciones personalizadas que transforman la educación...</div>
+            <a href="#" class="modal-trigger modal-trigger-3" data-modal="modal-name-3"><span>Ver más</span></a> <!-- Trigger Modal. -->
+          </div>
+        </div>
+      </div>
+      <div class="blog-slider__pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.blog-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        pagination: {
+          el: '.blog-slider__pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </div>
+  <div class="modal" id="modal-name-1" style="display: none;">
+    <div class="modal-sandbox modal-sandbox-1"></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="close-modal-1">&#10006;</div>
+        <h1>El evento que reunirá a líderes tecnológicos en Colombia</h1>
+      </div>
+      <div class="modal-body">
+        <p>Para esta edición del IT Summit, Dell ha puesto un foco especial en la inteligencia artificial (IA), 
+          identificándola como una tecnología con la capacidad de transformar la manera en que las organizaciones 
+          aprovechan los datos para crear valor. Así lo señala Hernández: “la inteligencia artificial realmente es una 
+          tecnología disruptiva en términos de cómo las organizaciones se pueden apalancar en la información y los datos para, 
+          a través de un procesamiento adecuado de los mismos y apoyados en herramientas como la IA, poder generar valor para sus clientes 
+          y para los mercados que atienden”. Aunque para él, la IA está en sus primeras fases de desarrollo, 
+          Dell Technologies busca mostrar su visión sobre el potencial y los desafíos que esta tecnología implica para las organizaciones colombianas, 
+          ofreciendo una guía sobre las bases que deben sentarse para aprovecharla al máximo.</p>
+        <br />
+        <button class="close-modal close-modal-1"> <span>Cerrar</span></button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="modal" id="modal-name-2">
+    <div class="modal-sandbox modal-sandbox-2"></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="close-modal-2">&#10006;</div>
+        <h1>¿Comenzará el periodismo a darle la espalda a las redes sociales?</h1>
+      </div>
+      <div class="modal-body">
+        <p>Las redes sociales han pasado de ser espacios de interacción a herramientas de manipulación que priorizan teorías conspirativas, 
+          polarización y contenido polémico para retener usuarios. Los medios de comunicación, inicialmente aliados, han sido desplazados por 
+          algoritmos que desvalorizan el periodismo objetivo. Bajo Elon Musk, Twitter (X) ha acentuado estas prácticas, promoviendo desinformación y 
+          ataques políticos. Medios como The Guardian y La Vanguardia han decidido dejar estas plataformas, calificándolas de tóxicas. La noticia alerta 
+          sobre el impacto de estas dinámicas en la democracia, señalando la necesidad de alternativas para proteger el periodismo frente a intereses económicos 
+          y políticos de las tecnológicas.</p> 
+        <br />
+        <button class="close-modal close-modal-2"> <span>Cerrar</span></button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="modal" id="modal-name-3">
+    <div class="modal-sandbox modal-sandbox-3"></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="close-modal-3">&#10006;</div>
+        <h1>IA Personalizada y Computación Cuántica: Líderes de la Innovación en 2024</h1>
+      </div>
+      <div class="modal-body">
+        <p>Descripción: En 2024, la inteligencia artificial sigue revolucionando sectores con aplicaciones personalizadas 
+          que transforman la educación, adaptando contenidos a las necesidades individuales de los estudiantes. 
+          Este avance democratiza el acceso al aprendizaje y reduce barreras económicas y geográficas. Paralelamente, 
+          la computación cuántica progresa significativamente, permitiendo resolver problemas complejos en minutos, 
+          con aplicaciones en ciencia e industria, como el diseño de medicamentos y la optimización logística. 
+          Estas tecnologías están marcando un punto de inflexión en cómo vivimos, trabajamos y aprendemos, 
+          subrayando su potencial transformador en todos los ámbitos.</p>
+        <br />
+        <button class="close-modal close-modal-3"> <span>Cerrar</span></button>
+      </div> 
+    </div>
+  </div>  
 </body>
 </html>
